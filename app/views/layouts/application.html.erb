@@ -4,23 +4,38 @@
     <title>Nameofapp</title>
     <%= csrf_meta_tags %>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bahiana|Sansita|Roboto+Condensed|Just+Me+Again+Down+Here" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      <div class="logo">
+        <a class="navbar-brand" href="#index">
+          <%= image_tag("logo.png", height: '50')%>
+        </a>
+      </div>
+      </div>
     </nav>
+    <div class="container background">
 
     <%= yield %>
 
+    </div>
     <footer>
-      &copy; 2015 Bike Berlin
+      <div class="container">
+        <div class="copyright">&copy; 2015 Bike Berlin</div>
+      </div>
     </footer>
   </body>
 </html>

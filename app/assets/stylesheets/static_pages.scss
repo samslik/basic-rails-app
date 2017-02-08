@@ -1,3 +1,108 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html,
+body {
+  min-height: 100%;
+}
+
+body{
+  background-color: #f1f1f2;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.container {
+  width: 80%;
+}
+.background {
+  background-color: #dc2c2c;
+  height: 100vh;
+}
+
+.logo {
+  float: left;
+  display: inline-block;
+}
+
+.footer,
+.navbar {
+  background-color: black;
+}
+
+.navbar-default {
+  border-color: #f8ecbd;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+footer {
+  font-family: 'Bahiana', cursive;
+  color: #f8ecbd;
+  font-size: 1em;
+  width: 100%;
+  padding: 10px 5px;
+  height: 40px;
+  position: fixed;
+  background-color: black;
+  bottom: 0;
+}
+
+h1 {
+  color: #f8ecbd;
+  font-weight: 500;
+  font-family: Sansita, 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2.2em;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+
+p {
+  padding: 0 10px;
+  font-size: 1.2em;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #f8ecbd;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 11px 0 0;
+  float: right;
+}
+
+nav li{
+  display: inline-block;
+  font-family: 'Bahiana', cursive;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  padding-right: 1.2em;
+  color: #f8ecbd;
+}
+
+nav li:last-child {
+  padding-right: 0;
+}
+
+.copyright {
+  float: right;
+  font-size: 1.2em;
+}
+
+.main-photo {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+//Palette:
+//colar - #dc2c2c
+//font - f8ecbd
+//grey - #C1C7CC
+
+//Fonts:
+//font-family: 'Roboto Condensed', sans-serif;
+//font-family: 'Bahiana', cursive;
+//font-family: 'Yanone Kaffeesatz', sans-serif;
