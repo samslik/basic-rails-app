@@ -8,34 +8,32 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Bahiana|Sansita|Roboto+Condensed|Just+Me+Again+Down+Here" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100|Sansita|Roboto+Condensed:100,400|Just+Me+Again+Down+Here" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      <div class="logo">
-        <a class="navbar-brand" href="#index">
-          <%= image_tag("logo.png", height: '50')%>
-        </a>
-      </div>
-      </div>
-    </nav>
-    <div class="container background">
+    <div class="wrapper">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        <div class="logo">
+          <a class="navbar-brand" href="#index">
+            <%= image_tag("logo.png", height: '50')%>
+          </a>
+        </div>
+        </div>
+      </nav>
 
-    <%= yield %>
+        <%= yield %>
 
-    </div>
-    <footer>
-      <div class="container">
-        <div class="copyright">&copy; 2015 Bike Berlin</div>
-      </div>
-    </footer>
+    </div> <!-- end wrapper-->
+      <footer class="container-fluid">
+          <div class="copyright">&copy; 2015 Bike Berlin</div>
+      </footer>
   </body>
 </html>

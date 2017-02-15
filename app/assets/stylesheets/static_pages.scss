@@ -3,22 +3,22 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 html,
 body {
-  min-height: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 body{
-  background-color: #f1f1f2;
-  margin: 0;
-  padding-top: 50px;
+  background-color: #f8f8f9;
+  padding-top: 40px;
 }
 
-.container {
-  width: 80%;
-}
-.background {
-  background-color: #dc2c2c;
-  height: 100vh;
-  margin-top: -50px;
+.wrapper {
+  background-color: #f8f8f9;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100%;
+  width: 95%;
+  padding-bottom: 40px;
 }
 
 .logo {
@@ -26,49 +26,55 @@ body{
   display: inline-block;
 }
 
-.footer,
 .navbar {
-  background-color: black;
+  background-color: #f8f8f9;
+  border: none;
 }
 
-.navbar-default {
-  border-color: #f8ecbd;
-}
+//.navbar-default {
+//  border-color: #dc2c2c;
+//}
 
 .navbar-brand {
   padding: 0;
 }
 
 footer {
-  font-family: 'Bahiana', cursive;
-  color: #f8ecbd;
+  font-family: 'Roboto Condensed', cursive;
+  color: #dc2c2c;
+  background-color: #f8f8f9;
   font-size: 1em;
   width: 100%;
   padding: 10px 5px;
   height: 40px;
   position: fixed;
-  background-color: black;
   bottom: 0;
+  border-top: 1px solid #EBEBEC;
 }
 
 h1 {
-  color: #f8ecbd;
+  color: #676767;
   font-weight: 500;
-  font-family: Sansita, 'Yanone Kaffeesatz', sans-serif;
   font-size: 2.2em;
   text-align: center;
-  text-shadow: 1px 1px black;
-  margin-top: 70px;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 30px;
 }
 
 p {
   padding: 0 10px;
   font-size: 1.2em;
   font-family: 'Roboto Condensed', sans-serif;
-  color: #f8ecbd;
+  color: #676767;
   text-align: center;
 }
 
+h2 {
+  color: #dc2c2c;
+  font-weight: 400;
+  font-size: 1.2em;
+}
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -78,11 +84,10 @@ nav ul {
 
 nav li{
   display: inline-block;
-  font-family: 'Bahiana', cursive;
-  font-size: 1.5em;
-  letter-spacing: 1px;
+  font-family: 'Roboto Condensed';
+  font-size: 1.3em;
   padding-right: 1.2em;
-  color: #f8ecbd;
+  color: #dc2c2c;
 }
 
 nav li:last-child {
@@ -92,6 +97,7 @@ nav li:last-child {
 .copyright {
   float: right;
   font-size: 1.2em;
+  padding-right: 50px;
 }
 
 .main-photo {
@@ -100,7 +106,7 @@ nav li:last-child {
 }
 
 //Palette:
-//colar - #dc2c2c
+//coral - #dc2c2c
 //font - f8ecbd
 //grey - #C1C7CC
 
