@@ -65,7 +65,7 @@ div {
 input,
 textarea {
   -webkit-appearance: textfield;
-  background-color: #f8ecbd;
+  background-color: #fafafd;
   color: black;
 }
 
@@ -149,9 +149,14 @@ label {
 }
 
 .product-container img {
+  max-width: 198px;
+  max-height: 148px;
+}
+
+.bike-photo {
   width: 200px;
-  max-height: 150px;
-  background-color: #f1f1f2;
+  height: 150px;
+  background-color: white;
   border: 1px solid #e7e7e7;
 }
 

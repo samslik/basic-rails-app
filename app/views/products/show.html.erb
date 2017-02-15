@@ -6,7 +6,7 @@
 </p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Title:</strong>
   <%= @product.name %>
 </p>
 
@@ -16,8 +16,8 @@
 </p>
 
 <p>
-  <strong>Colour:</strong>
-  <%= @product.colour %>
+  <strong>Color:</strong>
+  <%= @product.color %>
 </p>
 
 <p>
@@ -25,5 +25,5 @@
   <%= @product.price %>
 </p>
 
-<div class="button"><%= link_to 'Edit', edit_product_path(@product) %></div> |
+<div class="button"><%= link_to 'Edit', edit_product_path(@product) %></div> 
 <div class="button"><%= link_to 'Back', products_path %></div>
