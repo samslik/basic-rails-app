@@ -166,3 +166,26 @@ label {
   margin-bottom: 50px;
   height: 450px;
 }
+
+.carousel-caption {
+  color: black;
+  font-size: 1.3em;
+  //bottom: 20px;
+  right: 150px;
+  text-shadow: none;
+  text-align: right;
+  font-family: 'Poiret One';
+}
+
+.carousel-img {
+  margin: 0 auto;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
