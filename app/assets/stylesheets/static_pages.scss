@@ -53,6 +53,8 @@ footer {
 }
 
 h1 {
+  font-family: Lobster, 'Poiret One';
+  border-top: 1px solid #e7e7e7;
   color: #676767;
   font-weight: 500;
   font-size: 2.2em;
@@ -84,7 +86,8 @@ nav ul {
 
 nav li{
   display: inline-block;
-  font-family: 'Roboto Condensed';
+  font-family: Lobster, 'Poiret One';
+  //text-transform: uppercase;
   font-size: 1.3em;
   padding-right: 1.2em;
   color: #dc2c2c;

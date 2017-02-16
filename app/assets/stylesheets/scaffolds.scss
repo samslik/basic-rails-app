@@ -5,7 +5,7 @@ body {
   margin: 33px;
 }
 
-p, ol, ul, td, h1 {
+p, ol, ul, td {
   font-family: 'Roboto Condensed', arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -128,12 +128,13 @@ label {
 
 .price {
   border-top: 1px solid #dc2c2c;
-  font-weight: bold;
+  font-family: Roboto;
+  font-weight: 700;
   font-size: 1.3em;
 }
 
 .product-container .price {
-  text-align: center;
+  text-align: right;
   padding-top: 7px;
 }
 
