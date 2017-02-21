@@ -22,9 +22,14 @@
             <li><%= link_to 'Contact', static_pages_contact_path %></li>
           </ul>
         <div class="logo">
-
             <%= link_to image_tag("logo.png", height: '50'), root_path%>
-
+        </div>
+        <div class="search">
+          <%= form_tag("/products", method: "get") do %>
+              <%= label_tag(:q, "Search for:") %>
+              <%= text_field_tag(:q) %>
+              <%= submit_tag("Search") %>
+          <% end %>
         </div>
         </div>
       </nav>
