@@ -14,21 +14,24 @@
 
   <body>
     <div class="wrapper">
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
+      <div class="menu">
         <div class="logo">
           <a class="navbar-brand" href="#index">
             <%= image_tag("logo.png", height: '50')%>
           </a>
         </div>
+        <div class="navbar navbar-default center">
+          <ul>
+            <li>Contact</li>
+            <li>Home</li>
+            <li>About</li>
+          </ul>
         </div>
-      </nav>
-
+        <div class="right">
+          <div class="log-in">Log in</div>
+          <div class="contact-number">Phone: +49 333 444 666 5 <span>|</span></div>
+        </div>
+      </div> <!--end menu -->
         <%= yield %>
 
     </div> <!-- end wrapper-->
