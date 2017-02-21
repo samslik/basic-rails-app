@@ -25,10 +25,7 @@ body{
 }
 
 .navbar {
-  border: none;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  border-bottom: 1px solid #EBEBEC;
+  background-color: #f8f8f9;
 }
 
 .navbar-default {
@@ -103,6 +100,25 @@ h2 {
   margin: 0 auto;
 }
 
+nav a {
+  color: #dc2c2c;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #dc2c2c;
+  border: 1px solid #dc2c2c;
+}
+
+.logo a:hover {
+  border: none;
+}
+
+.logo a {
+  border: none;
+}
 .container-inner {
   height: 80px;
 }

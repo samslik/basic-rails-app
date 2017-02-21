@@ -16,20 +16,26 @@
     <div class="wrapper">
       <div class="menu">
         <div class="logo">
-          <a class="navbar-brand" href="#index">
-            <%= image_tag("logo.png", height: '50')%>
-          </a>
+          <%= link_to image_tag("logo.png", height: '50'), root_path%>
         </div>
         <div class="navbar navbar-default center">
           <ul>
-            <li>Contact</li>
-            <li>Home</li>
-            <li>About</li>
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'About', static_pages_about_path %></li>
+            <li><%= link_to 'Contact', static_pages_contact_path %></li>
           </ul>
         </div>
         <div class="right">
           <div class="log-in">Log in</div>
           <div class="contact-number">Phone: +49 333 444 666 5 <span>|</span></div>
+          <div class="search">
+            <%= form_tag("/products", method: "get") do %>
+                <%= label_tag(:q, "Search for:") %>
+                <%= text_field_tag(:q) %>
+                <%= submit_tag("Search") %>
+            <% end %>
+          </div>
+
         </div>
       </div> <!--end menu -->
         <%= yield %>
