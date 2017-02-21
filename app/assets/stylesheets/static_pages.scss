@@ -28,7 +28,6 @@ body{
 
 .navbar {
   background-color: #f8f8f9;
-  border: none;
 }
 
 //.navbar-default {
@@ -54,7 +53,6 @@ footer {
 
 h1 {
   font-family: Lobster, 'Poiret One';
-  border-top: 1px solid #e7e7e7;
   color: #676767;
   font-weight: 500;
   font-size: 2.2em;
@@ -108,6 +106,25 @@ nav li:last-child {
   margin: 0 auto;
 }
 
+nav a {
+  color: #dc2c2c;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #dc2c2c;
+  border: 1px solid #dc2c2c;
+}
+
+.logo a:hover {
+  border: none;
+}
+
+.logo a {
+  border: none;
+}
 //Palette:
 //coral - #dc2c2c
 //font - f8ecbd
