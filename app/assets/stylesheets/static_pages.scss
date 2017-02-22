@@ -45,7 +45,7 @@ footer {
   height: 40px;
   position: fixed;
   bottom: 0;
-  border-top: 1px solid #EBEBEC;
+  border-top: 1px dotted grey;
 }
 
 h1 {
@@ -79,7 +79,7 @@ p {
   height: 50px;
   width: 320px;
   border-top: 1px dotted grey;
-  margin-top: 40px;
+  margin-top: 0;
   padding-top: 10px;
 }
 
@@ -105,7 +105,7 @@ p {
 
 .navbar a {
   color: #dc2c2c;
-  padding: 9px;
+  padding: 9px 9px 11px 9px;
   transition: .3s;
 }
 
@@ -118,6 +118,22 @@ p {
 
 .logo a:hover {
   border: none;
+}
+
+.bike {
+  height: 20px;
+  margin-top: 20px;
+  padding-left: 200px;
+  margin-bottom: -7px;
+  transition: 1s;
+}
+
+.bike:hover {
+  padding-left: 100px;
+}
+
+.main-menu {
+  height: 50px;
 }
 
 .logo a {
@@ -193,6 +209,12 @@ p {
   color: #a5a3a3;
 }
 
+.search-field:active,
+.search-button:active,
+.search-field:focus,
+.search-button:focus {
+  outline: none;
+}
 //Palette:
 //coral - #dc2c2c
 //font - f8ecbd

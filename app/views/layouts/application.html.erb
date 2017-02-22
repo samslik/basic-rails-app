@@ -19,11 +19,14 @@
           <%= link_to image_tag("logo.png", height: '70'), root_path%>
         </div> <!-- end logo -->
         <div class="navbar navbar-default menu-center">
-          <ul>
-            <li><%= link_to 'Bikes', root_path %></li>
-            <li><%= link_to 'About', static_pages_about_path %></li>
-            <li><%= link_to 'Contact', static_pages_contact_path %></li>
-          </ul>
+          <div class="bike"><%= image_tag("bike.png", height: '15') %></div>
+          <div class="main-menu">
+            <ul>
+              <li><%= link_to 'Bikes', root_path %></li>
+              <li><%= link_to 'About', static_pages_about_path %></li>
+              <li><%= link_to 'Contact', static_pages_contact_path %></li>
+            </ul>
+          </div>
         </div>
         <div class="menu-right">
           <div class="top">
