@@ -14,35 +14,52 @@
 
   <body>
     <div class="wrapper">
-      <div class="menu">
-        <div class="logo">
-          <%= link_to image_tag("logo.png", height: '70'), root_path%>
-        </div> <!-- end logo -->
-        <div class="navbar navbar-default menu-center">
-          <div class="bike"><%= image_tag("bike.png", height: '15') %></div>
-          <div class="main-menu">
-            <ul>
-              <li><%= link_to 'Bikes', root_path %></li>
-              <li><%= link_to 'About', static_pages_about_path %></li>
-              <li><%= link_to 'Contact', static_pages_contact_path %></li>
-            </ul>
+
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
+          <div class="collapse navbar-collapse">
+            <div class="menu">
+              <div class="logo navbar-brand">
+                <%= link_to image_tag("logo.png"), root_path%>
+              </div> <!-- end logo -->
+              <div class="menu-center">
+                <div class="bike"><%= image_tag("bike.png", height: '15') %></div>
+                <div class="main-menu">
+                  <ul>
+                    <li><%= link_to 'Bikes', root_path %></li>
+                    <li><%= link_to 'About', static_pages_about_path %></li>
+                    <li><%= link_to 'Contact', static_pages_contact_path %></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-right">
+                <div class="top">
+                  <div class="phone">Phone: +49 333 444 666 5 <span>|</span></div>
+                  <div class="log-in">Log in</div>
+                </div>
+                <div class="bottom">
+                  <%= form_tag("/products", method: "get") do %>
+                      <%= text_field_tag(:q, nil, placeholder: 'Search', class: "search-field")%>
+                      <%= button_tag(type: "submit", class: "search-button") do %>
+                          <i class="glyphicon glyphicon-search"></i>
+                      <% end %>
+                  <% end %>
+                </div>
+              </div>
+            </div> <!--end menu -->
+          </div><!--/.nav-collapse -->
         </div>
-        <div class="menu-right">
-          <div class="top">
-            <div class="phone">Phone: +49 333 444 666 5 <span>|</span></div>
-            <div class="log-in">Log in</div>
-          </div>
-          <div class="bottom">
-            <%= form_tag("/products", method: "get") do %>
-                <%= text_field_tag(:q, nil, placeholder: 'Search', class: "search-field")%>
-                <%= button_tag(type: "submit", class: "search-button") do %>
-                    <i class="glyphicon glyphicon-search"></i>
-                <% end %>
-            <% end %>
-          </div>
-        </div>
-      </div> <!--end menu -->
+      </nav>
+
+
+
         <%= yield %>
 
     </div> <!-- end wrapper-->
