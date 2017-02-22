@@ -13,27 +13,27 @@
 
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "edit-form name" %>
   </div>
 
   <div class="field">
     <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, class: "edit-form description" %>
   </div>
 
   <div class="field">
     <%= f.label :image_url %>
-    <%= f.text_field :image_url %>
+    <%= f.text_field :image_url, class: "edit-form link"%>
   </div>
 
   <div class="field">
     <%= f.label :color %>
-    <%= f.text_field :color %>
+    <%= f.text_field :color, class: "edit-form color" %>
   </div>
 
   <div class="field">
     <%= f.label :price %>
-    <%= f.text_field :price %> Euro
+    <%= f.text_field :price,class: "edit-form price" %> Euro
   </div>
 
   <div class="actions">

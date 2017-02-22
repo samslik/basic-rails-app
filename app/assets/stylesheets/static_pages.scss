@@ -1,19 +1,38 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 html,
 body {
   height: 100%;
+  padding-top: 40px;
   margin: 0;
+}
+
+.container {
+  width: 95%;
+  padding: 0;
 }
 
 body{
   background-color: #f8f8f9;
-  padding-top: 40px;
+}
+
+.navbar-inverse {
+  background-color: #f8f8f9;
+  border: none;
+}
+
+.header {
+  padding-top: 20px;
+}
+
+.main-photo {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .wrapper {
-  background-color: #f8f8f9;
   margin: 0 auto;
   height: auto;
   min-height: 100%;
@@ -22,17 +41,10 @@ body{
 }
 
 .logo {
+  padding-top: 5px;
+  width: 215px;
   float: left;
-  display: inline-block;
 }
-
-.navbar {
-  background-color: #f8f8f9;
-}
-
-//.navbar-default {
-//  border-color: #dc2c2c;
-//}
 
 .navbar-brand {
   padding: 0;
@@ -48,7 +60,7 @@ footer {
   height: 40px;
   position: fixed;
   bottom: 0;
-  border-top: 1px solid #EBEBEC;
+  border-top: 1px dotted #bdbcbc;
 }
 
 h1 {
@@ -62,6 +74,12 @@ h1 {
   padding-bottom: 30px;
 }
 
+h2 {
+  color: #dc2c2c;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
 p {
   padding: 0 10px;
   font-size: 1.2em;
@@ -70,28 +88,26 @@ p {
   text-align: center;
 }
 
-h2 {
-  color: #dc2c2c;
-  font-weight: 400;
-  font-size: 1.2em;
-}
-nav ul {
+.menu-center ul {
   list-style-type: none;
-  margin: 0;
-  padding: 11px 0 0;
-  float: right;
+  text-align: center;
+  height: 50px;
+  width: 320px;
+  border-top: 1px dotted #bdbcbc;
+  margin-top: 0;
+  padding-top: 10px;
 }
 
-nav li{
+.menu-center li{
   display: inline-block;
   font-family: Lobster, 'Poiret One';
-  //text-transform: uppercase;
   font-size: 1.3em;
-  padding-right: 1.2em;
+  padding-right: 50px;
   color: #dc2c2c;
+  margin: 0 auto;
 }
 
-nav li:last-child {
+.menu-center li:last-of-type {
   padding-right: 0;
 }
 
@@ -101,29 +117,119 @@ nav li:last-child {
   padding-right: 50px;
 }
 
-.main-photo {
-  max-width: 80%;
-  margin: 0 auto;
-}
 
-nav a {
+.menu-center a {
   color: #dc2c2c;
-  padding: 10px;
-  border: 1px solid transparent;
+  padding: 9px 9px 11px 9px;
+  transition: .3s;
 }
 
-nav a:hover {
+.menu-center a:hover {
   text-decoration: none;
-  color: #dc2c2c;
-  border: 1px solid #dc2c2c;
+  color: #f8f8f9;
+  background-color: #dc2c2c;
+  border-radius: 5px;
 }
 
 .logo a:hover {
   border: none;
 }
 
+.bike {
+  height: 20px;
+  margin-top: 20px;
+  padding-left: 200px;
+  margin-bottom: -7px;
+  transition: 1s;
+}
+
+.bike:hover {
+  padding-left: 100px;
+}
+
+.main-menu {
+  height: 50px;
+}
+
 .logo a {
   border: none;
+}
+
+.menu-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.menu-right span {
+  color: #EBEBEC;
+  padding-left: 10px;
+}
+
+#notice {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+.menu div {
+  display: inline-block;
+}
+
+.menu-right {
+  width: 190px;
+}
+
+.top {
+  padding: 10px 0 10px;
+}
+
+.phone {
+  padding-right: 10px;
+}
+
+.log-in {
+  color: #dc2c2c;
+}
+
+.menu-center {
+  background-color: transparent;
+  width: 300px;
+  border: none;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #bdbcbc;
+  height: 80px;
+}
+
+.search-field {
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  padding: 3px 6px 1px 6px;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.search-button {
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  padding: 3px 6px 1px 6px;
+  border-radius: 0 4px 4px 0;
+  background-color: #fafafd;
+  margin-left: -6px;
+}
+
+.search-button:hover {
+  color: #a5a3a3;
+}
+
+.search-field:active,
+.search-button:active,
+.search-field:focus,
+.search-button:focus {
+  outline: none;
 }
 //Palette:
 //coral - #dc2c2c
@@ -134,3 +240,87 @@ nav a:hover {
 //font-family: 'Roboto Condensed', sans-serif;
 //font-family: 'Bahiana', cursive;
 //font-family: 'Yanone Kaffeesatz', sans-serif;
+.nav {
+  transition: height .8s;
+}
+
+.navbar-brand img{
+  height: 65px;
+  padding-top: 13px;
+}
+
+nav.shrink .navbar-brand img {
+  height: 40px;
+  padding: 0;
+}
+
+nav.shrink .phone,
+nav.shrink .bike {
+  display: none;
+}
+
+nav.shrink .log-in {
+  padding: 2px 5px;
+  border: 1px solid #dc2c2c;
+  border-radius: 5px;
+  margin-right: 5px;
+  background-color: #dc2c2c;
+  color: white;
+}
+
+nav.shrink .menu-right {
+  width: 230px;
+}
+
+nav.shrink .navbar-inverse,
+nav.shrink .container,
+nav.shrink .menu {
+  height: 40px;
+}
+
+nav.shrink a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 15px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}
+
+nav.shrink .main-menu ul {
+  border: none;
+}
+
+nav.shrink .bottom {
+  padding-top: 4px;
+}
+
+.edit-form {
+  border: 1px solid #e1e1e1;
+  padding: 3px 6px 1px 6px;
+  border-radius: 4px;
+}
+
+.price {
+  width: 50px;
+}
+
+.color {
+  width: 100px;
+}
+
+.name,
+.description,
+.link {
+  width: 600px;
+}
+
+.description {
+  height: 200px;
+}
+
+.field {
+  margin: 0 auto;
+}
