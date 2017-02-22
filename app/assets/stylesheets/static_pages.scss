@@ -1,6 +1,7 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 html,
 body {
   height: 100%;
@@ -9,6 +10,11 @@ body {
 
 body{
   background-color: #f8f8f9;
+}
+
+.main-photo {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -20,16 +26,9 @@ body{
 }
 
 .logo {
+  padding-top: 5px;
+  width: 215px;
   float: left;
-  display: inline-block;
-}
-
-.navbar {
-  background-color: #f8f8f9;
-}
-
-.navbar-default {
-  background-color: transparent;
 }
 
 .navbar-brand {
@@ -60,6 +59,12 @@ h1 {
   padding-bottom: 30px;
 }
 
+h2 {
+  color: #dc2c2c;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
 p {
   padding: 0 10px;
   font-size: 1.2em;
@@ -68,25 +73,27 @@ p {
   text-align: center;
 }
 
-h2 {
-  color: #dc2c2c;
-  font-weight: 400;
-  font-size: 1.2em;
-}
-.center ul {
+.navbar ul {
   list-style-type: none;
-  padding: 11px 0 0;
   text-align: center;
   height: 50px;
+  width: 320px;
+  border-top: 1px dotted grey;
+  margin-top: 40px;
+  padding-top: 10px;
 }
 
-.center li{
+.navbar li{
   display: inline-block;
   font-family: Lobster, 'Poiret One';
   font-size: 1.3em;
-  padding-right: 3em;
+  padding-right: 50px;
   color: #dc2c2c;
   margin: 0 auto;
+}
+
+.navbar li:last-of-type {
+  padding-right: 0;
 }
 
 .copyright {
@@ -95,21 +102,18 @@ h2 {
   padding-right: 50px;
 }
 
-.main-photo {
-  max-width: 80%;
-  margin: 0 auto;
-}
 
-nav a {
+.navbar a {
   color: #dc2c2c;
-  padding: 10px;
-  border: 1px solid transparent;
+  padding: 9px;
+  transition: .3s;
 }
 
-nav a:hover {
+.navbar a:hover {
   text-decoration: none;
-  color: #dc2c2c;
-  border: 1px solid #dc2c2c;
+  color: #f8f8f9;
+  background-color: #dc2c2c;
+  border-radius: 5px;
 }
 
 .logo a:hover {
@@ -119,17 +123,12 @@ nav a:hover {
 .logo a {
   border: none;
 }
-.container-inner {
-  height: 80px;
-}
 
-.right div {
-  display: inline-block;
+.menu-right {
   float: right;
-  padding-right: 10px;
 }
 
-.right span {
+.menu-right span {
   color: #EBEBEC;
   padding-left: 10px;
 }
@@ -143,21 +142,56 @@ nav a:hover {
   display: inline-block;
 }
 
-//.menu {
-//  width: 100%;
-//}
-//
-//.logo {
-//  width: 15%;
-//}
-//
-//.right {
-//  width: 20%;
-//}
-//
-//.center {
-//  width: 55%;
-//}
+.menu-right {
+  width: 210px;
+}
+
+.top {
+  padding: 10px 0 10px;
+}
+
+.phone {
+  padding-right: 10px;
+}
+
+.log-in {
+  color: #dc2c2c;
+}
+
+.navbar {
+  background-color: transparent;
+  width: 300px;
+  border: none;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted grey;
+  height: 80px;
+}
+
+.search-field {
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  padding: 3px 6px 1px 6px;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.search-button {
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  padding: 3px 6px 1px 6px;
+  border-radius: 0 4px 4px 0;
+  background-color: #fafafd;
+  margin-left: -6px;
+}
+
+.search-button:hover {
+  color: #a5a3a3;
+}
 
 //Palette:
 //coral - #dc2c2c

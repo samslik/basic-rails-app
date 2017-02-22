@@ -16,26 +16,28 @@
     <div class="wrapper">
       <div class="menu">
         <div class="logo">
-          <%= link_to image_tag("logo.png", height: '50'), root_path%>
-        </div>
-        <div class="navbar navbar-default center">
+          <%= link_to image_tag("logo.png", height: '70'), root_path%>
+        </div> <!-- end logo -->
+        <div class="navbar navbar-default menu-center">
           <ul>
-            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Bikes', root_path %></li>
             <li><%= link_to 'About', static_pages_about_path %></li>
             <li><%= link_to 'Contact', static_pages_contact_path %></li>
           </ul>
         </div>
-        <div class="right">
-          <div class="log-in">Log in</div>
-          <div class="contact-number">Phone: +49 333 444 666 5 <span>|</span></div>
-          <div class="search">
+        <div class="menu-right">
+          <div class="top">
+            <div class="phone">Phone: +49 333 444 666 5 <span>|</span></div>
+            <div class="log-in">Log in</div>
+          </div>
+          <div class="bottom">
             <%= form_tag("/products", method: "get") do %>
-                <%= label_tag(:q, "Search for:") %>
-                <%= text_field_tag(:q) %>
-                <%= submit_tag("Search") %>
+                <%= text_field_tag(:q, nil, placeholder: 'Search', class: "search-field")%>
+                <%= button_tag(type: "submit", class: "search-button") do %>
+                    <i class="glyphicon glyphicon-search"></i>
+                <% end %>
             <% end %>
           </div>
-
         </div>
       </div> <!--end menu -->
         <%= yield %>
