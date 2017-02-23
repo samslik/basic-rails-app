@@ -1,43 +1,45 @@
-<%= form_for(product) do |f| %>
-  <% if product.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+<div class="edit-wrapper">
+  <%= form_for(product) do |f| %>
+    <% if product.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
 
-      <ul>
-      <% product.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% product.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "edit-form edit-name form-control" %>
     </div>
+
+    <div class="field">
+      <%= f.label :description %>
+      <%= f.text_area :description, class: "edit-form edit-description form-control" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :image_url %>
+      <%= f.text_field :image_url, class: "edit-form edit-link form-control"%>
+    </div>
+
+    <div class="field">
+      <%= f.label :color %>
+      <%= f.text_field :color, class: "edit-form edit-color form-control" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :price %>
+      <%= f.text_field :price, class: "edit-form edit-price form-control" %> Euro
+    </div>
+
+    <div class="actions">
+      <%= f.submit class: "submit-button" %>
+    </div>
+
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name, class: "edit-form name" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description, class: "edit-form description" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :image_url %>
-    <%= f.text_field :image_url, class: "edit-form link"%>
-  </div>
-
-  <div class="field">
-    <%= f.label :color %>
-    <%= f.text_field :color, class: "edit-form color" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :price %>
-    <%= f.text_field :price,class: "edit-form price" %> Euro
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-
-<% end %>
+</div>

@@ -11,6 +11,6 @@
     <p class="price"> <%= product.price %> Euro </p>
     <div class="button"><%= link_to 'Show', product %></div>
     <div class="button"><%= link_to 'Edit', edit_product_path(product) %></div>
-    <div class="button"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+    <div class="button"><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></div>
   </div> <!-- end product-container -->
 </div> <!-- end col -->
