@@ -1,3 +1,204 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: 'Roboto Condensed', arial, helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 18px;
+  margin: 33px;
+}
+
+p, ol, ul, td {
+  font-family: 'Roboto Condensed', arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 5px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+.button {
+  display: inline-block;
+}
+
+.button-new a,
+.button a,
+.button-back a{
+  color: #f8f8f9;
+  background-color: #dc2c2c;
+  font-size: 1em;
+  padding: 2px 8px;
+  border: 1px solid #dc2c2c;
+  border-radius: 5%;
+  text-transform: uppercase;
+
+  &:visited {
+    color: #f8f8f9;
+    text-shadow: 1px 1px grey;
+  }
+
+  &:hover {
+    text-decoration: none;
+    border: 1px solid #dc2c2c;
+    color: #dc2c2c;
+    background-color: #f8f8f9;
+  }
+}
+
+table {
+  width: 90%;
+}
+
+th {
+  padding-bottom: 5px;
+}
+
+td {
+  padding-bottom: 7px;
+  padding-right: 5px;
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+input,
+textarea {
+  -webkit-appearance: textfield;
+  background-color: #fafafd;
+  color: black;
+}
+
+#notice {
+  color: #676767;
+  padding-top: 30px;
+  //border: 1px solid #dc2c2c;
+  //border-radius: 2%;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+label {
+  display: block;
+}
+
+.show-product {
+  padding-top: 3em;
+  margin: 0 auto;
+  display: block;
+}
+
+.product-container p {
+  text-align: left;
+  padding: 0;
+}
+
+.field {
+  padding-left: 100px;
+}
+
+.price {
+  border-top: 1px solid #dc2c2c;
+  font-family: Lobster;
+
+  font-size: 1.3em;
+}
+
+.product-container .price {
+  text-align: right;
+  padding-top: 7px;
+}
+
+.product-container .button {
+  margin: 0 auto;
+}
+
+.polaroid {
+  width: 220px;
+  height: 190px;
+  padding: 10px 10px 40px 10px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.product-container img {
+  max-width: 198px;
+  max-height: 148px;
+}
+
+.bike-photo {
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+}
+
+.product-container {
+  max-width: 250px;
+  margin-bottom: 50px;
+  height: 450px;
+  padding: 10px;
+  border: 1px solid #f8f8f9;
+}
+
+.product-container:hover {
+  border: 1px solid #e7e7e7;
+  border-radius: 1%;
+}
+
+.carousel-caption {
+  color: black;
+  font-size: 1.3em;
+  //bottom: 20px;
+  right: 150px;
+  text-shadow: none;
+  text-align: right;
+  font-family: 'Poiret One';
+}
+
+.carousel-img {
+  margin: 0 auto;
+}
+
+.carousel-control.menu-right,
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}

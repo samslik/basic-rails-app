@@ -13,6 +13,12 @@ body{
   background-color: #f8f8f9;
 }
 
+.button-back {
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+}
+
 @media only screen and (max-width: 767px) {
   body,
   .header {
@@ -222,7 +228,6 @@ footer {
 .copyright {
   float: right;
   font-size: 1.2em;
-  padding-right: 50px;
 }
 
 h1 {
@@ -331,82 +336,184 @@ nav.shrink .bottom {
 }
 //end shrink navigation bar
 
-.contact-wrapper {
-  margin: 0 auto;
-  width: 80%;
-}
+//contact form
+@media (min-width: 768px) {
+  .envelope {
+    margin: 0 auto;
+    padding: 70px 60px 250px;
+    max-width: 600px;
+    max-height: 586px;
+    background-image: url('/assets/envelope.png');
+  }
 
-.form-group {
-  padding-top: 5px;
-}
+  .form-group {
+    padding-top: 5px;
+    margin-bottom: 0;
+    font-family: 'Reenie Beanie', sans-serif;
+    font-size: 22px;
+  }
 
-.panel {
-  background-color: inherit;
-  border: none;
-  box-shadow: none;
+  .envelope .form-control {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0 12px;
+  }
+
+  .envelope .form-control:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .panel {
+    background-color: inherit;
+    border: none;
+    box-shadow: none;
+  }
+
+  #message-box {
+    width: 450px;
+    height: 120px;
+  }
+
+  .message-group {
+    padding-top: 5px;
+  }
+
+  #envelope-button {
+    margin-left: 200px;
+    font-size: 2em;
+    border: 1px solid #dc2c2c;
+    border-radius: 5px;
+    background-color: #dc2c2c;
+    color: #f8f8f9;
+    padding: 5px 20px;
+    font-family: 'Reenie Beanie', sans-serif;
+  }
+
+  #envelope-button:hover {
+    border: 1px solid #dc2c2c;
+    background-color: #f8f8f9;
+    color: #dc2c2c;
+  }
+
+  .field {
+    margin: 0 auto;
+    padding: 0 10px 10px;
+  }
+
+  .contact-header {
+    padding-bottom: 0;
+  }
+
+  .contact-email,
+  .contact-message,
+  .contact-name {
+    font-size: 22px;
+  }
+
+  .contact-name,
+  .contact-email {
+    text-align: center;
+  }
+}
+//end contact form
+
+.required:after{
+  content:"*";
+  color: #dc2c2c;
 }
 
 //edit form
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+
 .edit-wrapper {
-  margin: 0 auto;
-  max-width: 620px;
+margin: 0 auto;
+max-width: 620px;
 }
 
 .edit-form {
-  border: 1px solid #e1e1e1;
-  border-radius: 4px;
-  padding: 3px 6px 1px;
+border: 1px solid #e1e1e1;
+border-radius: 4px;
+padding: 3px 6px 1px;
 }
 
 .edit-price {
-  max-width: 50px;
+max-width: 50px;
 }
 
 .edit-color {
-  max-width: 100px;
+max-width: 100px;
 }
 
 textarea.form-control {
-  height: 200px;
+  height: 150px;
+  margin-bottom: 30px;
 }
 
 .edit-name,
 .edit-description,
 .edit-link {
-  max-width: 600px;
-}
-
-.field {
-  margin: 0 auto;
-  padding: 0 10px 10px;
+max-width: 600px;
 }
 
 .form-control {
   display: inline-block;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border: 1px solid #bfbcbc;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 .submit-button {
-  background-color: #dc2c2c;
-  padding: 5px;
-  border: 1px solid #dc2c2c;
-  border-radius: 5px;
-  color: #f8f8f9;
+background-color: #dc2c2c;
+padding: 5px 10px;
+border: 1px solid #dc2c2c;
+border-radius: 5px;
+color: #f8f8f9;
+}
+
+.contact-name,
+.contact-email,
+.contact-message{
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .form-inline .form-control {
+    width: 300px;
+  }
 }
 
 .submit-button:hover {
-  background-color: #f8f8f9;
-  padding: 5px;
-  border: 1px solid #dc2c2c;
-  border-radius: 5px;
-  color: #dc2c2c;
+background-color: #f8f8f9;
+border: 1px solid #dc2c2c;
+border-radius: 5px;
+color: #dc2c2c;
 }
 
 .label {
-  text-align: center;
+text-align: center;
 }
 //end edit form
 
+.row {
+  margin: 0;
+}
 
+.paper-size {
+  max-width: 470px;
+}
 //Palette:
 //coral - #dc2c2c
 //font - f8ecbd
