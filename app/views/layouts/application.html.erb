@@ -42,7 +42,13 @@
               <div class="menu-right">
                 <div class="top">
                   <div class="phone">Phone: +49 333 444 666 5 <span>|</span></div>
-                  <div class="log-in">Log in</div>
+                  <div class="log-in">
+                          <% if user_signed_in? %>
+                            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                          <% else %>
+                            <%= link_to('Login', new_user_session_path) %>
+                          <% end %>
+                  </div>
                 </div>
                 <div class="bottom">
                   <%= form_tag("/products", method: "get") do %>
@@ -57,8 +63,6 @@
           </div><!--/.nav-collapse -->
         </div>
       </nav>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
 
 
         <%= yield %>

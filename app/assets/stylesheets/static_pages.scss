@@ -13,6 +13,15 @@ body{
   background-color: #f8f8f9;
 }
 
+a {
+  color: #dc2c2c;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #676767;
+}
+
 .button-back {
   position: fixed;
   bottom: 70px;
@@ -119,7 +128,8 @@ body{
   transition: .3s;
 }
 
-.menu-center a:hover {
+.menu-center a:hover,
+.log-in a:hover {
   text-decoration: none;
   color: #f8f8f9;
   background-color: #dc2c2c;
@@ -148,14 +158,13 @@ body{
 }
 
 .menu-right {
-  float: right;
   margin-left: 20px;
   width: 190px;
 }
 
 .menu-right span {
   color: #EBEBEC;
-  padding-left: 10px;
+  padding-left: 7px;
 }
 
 .menu {
@@ -174,12 +183,9 @@ body{
   padding: 10px 0 10px;
 }
 
-.phone {
-  padding-right: 10px;
-}
-
-.log-in {
+.log-in a{
   color: #dc2c2c;
+  padding: 3px 5px;
 }
 
 .logo-xs {
@@ -269,6 +275,7 @@ p {
   padding: 3px 6px 1px 6px;
   border-radius: 4px;
   width: 150px;
+  background-color: transparent;
 }
 
 .search-button {
@@ -289,6 +296,7 @@ p {
 .search-field:focus,
 .search-button:focus {
   outline: none;
+  background-color: #e1e1e1;
 }
 //end search box
 
@@ -303,17 +311,32 @@ nav.shrink .bike {
   display: none;
 }
 
-nav.shrink .log-in {
-  padding: 2px 5px;
+nav.shrink .log-in a {
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 3px 5px;
+  color: #f8f8f9;
+  background-color: #dc2c2c;
   border: 1px solid #dc2c2c;
   border-radius: 5px;
-  margin-right: 5px;
-  background-color: #dc2c2c;
-  color: white;
+  font-size: 12px;
+}
+
+nav.shrink .log-in a:hover {
+  text-decoration: none;
+  padding: 3px 5px;
+  color: #dc2c2c;
+  background-color: #f8f8f9;
+  border: 1px solid #dc2c2c;
+  border-radius: 5px;
+}
+
+nav.shrink .log-in {
+  padding-right: 10px;
 }
 
 nav.shrink .menu-right {
-  width: 230px;
+  width: 240px;
 }
 
 nav.shrink .navbar,
@@ -332,8 +355,9 @@ nav.shrink .main-menu ul {
 }
 
 nav.shrink .bottom {
-  padding-top: 4px;
+  padding-top: 8px;
 }
+
 //end shrink navigation bar
 
 //contact form
@@ -419,6 +443,7 @@ nav.shrink .bottom {
     text-align: center;
   }
 }
+
 //end contact form
 
 .required:after{
@@ -469,10 +494,9 @@ max-width: 600px;
 }
 
 .form-control:focus {
-  border: 1px solid #bfbcbc;
+  border: 1px solid #b3b2b2;
   outline: none;
   box-shadow: none;
-  border-radius: 0;
 }
 
 .submit-button {
@@ -513,6 +537,82 @@ text-align: center;
 
 .paper-size {
   max-width: 470px;
+}
+
+.login-container div {
+  text-align: center;
+}
+
+.login-container label {
+  display: inline-block;
+}
+
+.login-field {
+  border: 1px solid #c3c2c2;
+  border-radius: 4px;
+  padding: 3px 6px 1px;
+  background-color: transparent;
+}
+
+.login-field:focus {
+  outline: none;
+  border: 1px solid #9a9898;
+}
+
+.login-container .field {
+  padding: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #f8f8f9 inset;
+}
+
+.shared-links {
+  padding-top: 40px;
+}
+
+.image-box div{
+  display: block;
+  float: right;
+  margin-top: -80px;
+}
+
+.image-box img {
+  max-height: 90vh;
+  max-width: 450px;
+  padding-top: 60px;
+}
+
+.image-copyright {
+  display: block;
+}
+
+.image-box {
+  padding-right: 22px;
+}
+
+.image {
+  position: relative;
+}
+.image-copyright {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+.image-copyright a {
+  color: #333;
+}
+
+@media only screen and (max-width: 767px) {
+  .image-box {
+    display: none;
+  }
+
+}
+
+.close-account {
+  text-align: left;
 }
 //Palette:
 //coral - #dc2c2c
