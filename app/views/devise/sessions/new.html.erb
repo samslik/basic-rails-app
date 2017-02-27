@@ -29,12 +29,9 @@
     </div>
   </div>
   <div class="col-xs-12 col-sm-8 image-box">
-    <div class="image">
-      <%= image_tag("ride.png", class: "img-responsive image-ride")%>
-      <div class="image-copyright">
-        <a href="http://www.freepik.com/free-vector/cute-quote-with-a-bicycle_943071.htm">Designed by Freepik</a>
-      </div>
-    </div>
+
+    <%= render partial: "devise/ride-image"%>
+
   </div>
 </div>
 <div class="button-back"><%= link_to 'Back', :back%></div>
