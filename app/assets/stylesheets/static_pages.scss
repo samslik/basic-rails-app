@@ -523,3 +523,64 @@ text-align: center;
 //font-family: 'Roboto Condensed', sans-serif;
 //font-family: 'Bahiana', cursive;
 //font-family: 'Yanone Kaffeesatz', sans-serif;
+
+.keyart, .keyart_layer {
+  height: 1000px;
+}
+//
+//#parallax {
+//  display: none;
+//}
+//#nonparallax {
+//  display: block;
+//}
+
+#nonparallax {
+  background-image: url('../images/keyart-mobile.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.keyart {
+  position: relative;
+  z-index: 10;
+}
+
+.keyart_layer {
+  background-position: bottom center;
+  background-size: auto 1000px;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+.keyart_layer.parallax {
+  /* position: fixed; */
+}
+#keyart-0 {
+  background-image: url('/assets/sky.png');
+  /* background-color: #ffaf1b; */
+}
+#keyart-1 {
+  background-image: url('/assets/mountains.png');
+}
+#keyart-2 {
+  background-image: url('/assets/city.png');
+}
+#keyart-3 {
+  background-image: url('/assets/path.png');
+}
+#keyart-4 {
+  background-image: url('/assets/bear.png');
+}
+#keyart-5 {
+  background-image: url('/assets/grass.png');
+}
+#keyart-6 {
+  background-image: url('/assets/trees.png');
+}
+#keyart-scrim {
+  background-color: #ffaf00;
+  opacity: 0;
+}
+
