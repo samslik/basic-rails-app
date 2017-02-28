@@ -22,3 +22,8 @@ $(window).scroll(function() {
         $('nav').removeClass('shrink');
     }
 });
+
+setTimeout(function() {
+    $('#notice').delay(5000).fadeOut()
+    $('#alert').delay(5000).fadeOut()
+});
