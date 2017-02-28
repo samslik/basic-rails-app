@@ -63,6 +63,16 @@
           </div><!--/.nav-collapse -->
         </div>
       </nav>
+      <% if alert %>
+        <div id="alert" class="alert alert-info" role="alert">
+          <%= alert %>
+        </div>
+      <% end %>
+      <% if notice %>
+        <div id="notice" class="alert alert-info" role="alert">
+          <%= notice %>
+        </div>
+      <% end %>
 
 
         <%= yield %>

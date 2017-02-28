@@ -261,13 +261,6 @@ p {
   text-align: center;
 }
 
-#notice {
-  margin-top: 20px;
-  margin-bottom: 0;
-  padding: 0;
-  color: #dc2c2c;
-}
-
 //search box
 .search-field {
   border: 1px solid #e1e1e1;
@@ -443,7 +436,6 @@ nav.shrink .bottom {
     text-align: center;
   }
 }
-
 //end contact form
 
 .required:after{
@@ -608,6 +600,20 @@ input:-webkit-autofill {
   .image-box {
     display: none;
   }
+  #alert,
+  #notice {
+    padding-top: 30px;
+  }
+}
+
+
+#notice {
+  color: #676767;
+}
+
+#alert,
+#notice {
+  text-align: center;
 }
 
 .close-account {
@@ -621,6 +627,10 @@ input:-webkit-autofill {
     right: 45px;
     width: 555px;
   }
+}
+
+.show-container {
+  padding-top: 30px;
 }
 
 //Palette:
