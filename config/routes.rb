@@ -11,9 +11,9 @@ Rails.application.routes.draw do
 
   resources :orders, only: [:index, :show, :create, :destroy]
 
-  # root 'static_pages#index'
-  # root 'static_pages#landing_page'
-  root 'products#index'
+
+  root 'static_pages#landing_page'
+  # root 'products#index'
 
 
 
