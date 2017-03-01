@@ -188,3 +188,23 @@ label {
 .carousel-indicators {
   bottom: -40px;
 }
+
+.lowest_rating,
+.highest_rating {
+  padding: 10px 20px;
+}
+
+.lowest_rating h2,
+.highest_rating h2 {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.comment-box {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.division {
+  border-top: 1px dashed #bdbcbc;
+}

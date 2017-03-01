@@ -15,7 +15,13 @@
 //= require turbolinks
 //= require_tree .
 
+
 $(document).ready(function() {
+
+    setTimeout(function () {
+        $('#notice, #alert').delay(5000).fadeOut()
+    });
+
     $(window).scroll(function () {
         if ($(document).scrollTop() > 20) {
             $('nav').addClass('shrink');
@@ -23,9 +29,4 @@ $(document).ready(function() {
             $('nav').removeClass('shrink');
         }
     });
-
-    setTimeout(function () {
-        $('#notice, #alert').delay(5000).fadeOut()
-
-    });
-};
+});
