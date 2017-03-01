@@ -16,7 +16,7 @@
 //= require_tree .
 
 
-$(document).ready(function() {
+$(document).on('turbolinks:load', function(){
 
     setTimeout(function () {
         $('#notice, #alert').delay(5000).fadeOut()
@@ -27,6 +27,14 @@ $(document).ready(function() {
             $('nav').addClass('shrink');
         } else {
             $('nav').removeClass('shrink');
+        }
+    });
+
+    $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
+    $('.rated').raty({ path: '/assets',
+        readOnly: true,
+        score: function() {
+            return $(this).attr('data-score');
         }
     });
 });

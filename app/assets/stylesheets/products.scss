@@ -103,9 +103,12 @@ label {
 }
 
 .show-product {
-  padding-top: 3em;
   margin: 0 auto;
   display: block;
+}
+
+.product-details p{
+  text-align: left;
 }
 
 .product-container p {
@@ -200,11 +203,42 @@ label {
   font-size: 1.3em;
 }
 
-.comment-box {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .division {
   border-top: 1px dashed #bdbcbc;
+}
+
+.rated:first-child {
+  text-align: center;
+}
+
+.rated {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.rating {
+  text-align: center;
+}
+
+.product-name p{
+  font-family: Lobster, cursive;
+  font-size: 17px;
+}
+
+.aver-rating {
+  margin-top: 10px;
+}
+
+.aver-rating div {
+  display: inline-block;
+}
+
+.show-links {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.new-comment-field {
+  min-width: 250px;
+  height: 150px;
 }

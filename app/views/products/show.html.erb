@@ -1,45 +1,61 @@
-<div class="wrapper-show">
-  <p>
-    <%= image_tag(@product.image_url, class: "show-product img-responsive") %>
-  </p>
+<div class="wrapper-show container-fluid">
+  <div class="product-name">
+    <h1> <%= @product.name %> </h1>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <p>
+        <%= image_tag(@product.image_url, class: "show-product img-responsive") %>
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="product-details">
+        <div class="aver-rating">
+          <div><p>Average Rating:</p></div>
+          <div class="rated" data-score="<%= @product.average_rating %>"></div>
+        </div>
 
-  <p>
-    <strong>Title:</strong>
-    <%= @product.name %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= @product.description %>
-  </p>
-
-  <p>
-    <strong>Color:</strong>
-    <%= @product.color %>
-  </p>
-
-  <p>
-    <strong>Price:</strong>
-    <%= @product.price %> Euro
-  </p>
-
-  <div class="button"><%= link_to 'Edit', edit_product_path(@product) %></div>
-  <div class="button"><%= link_to 'Show all', products_path %></div>
+        <p>
+          <%= @product.description %>
+        </p>
+        <p>
+          <strong>Color:</strong>
+          <%= @product.color %>
+        </p>
+        <p>
+          <strong>Price:</strong>
+          <%= @product.price %> Euro
+        </p>
+      </div>
+    </div>
+  </div> <!--end row -->
+  <div class="show-links">
+    <div class="button"><%= link_to 'Edit', edit_product_path(@product) %></div>
+    <div class="button"><%= link_to 'Show all', products_path %></div>
+  </div>
 
   <div class="row division">
-    <div class="comment-box">
-      <div class="col-xs-12 col-sm-6">
-        <div class="highest_rating">
-          <h2>Top positive review</h2>
-          <p><%= @product.highest_rating_comment %></p>
-        </div>
+    <div class="col-xs-12 col-md-4">
+
+      <%= render 'new_comment' %>
+
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="highest_rating">
+        <h2>Top positive review</h2>
+        <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div>
+        <p><%= @product.highest_rating_comment.body %></p>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="lowest_rating">
-          <h2>Top critical review</h2>
-          <p><%= @product.lowest_rating_comment %></p>
-        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="lowest_rating">
+        <h2>Top critical review</h2>
+        <div class="rated" data-score="<%= @product.lowest_rating_comment.rating %>"></div>
+        <p><%= @product.lowest_rating_comment.body %></p>
       </div>
-    </div> <!-- end comment-box -->
+    </div>
   </div> <!-- end row -->
+
+  <%= render 'comments' %>
+
 </div> <!-- wrapper show -->
