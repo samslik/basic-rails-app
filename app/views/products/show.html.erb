@@ -43,15 +43,23 @@
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="highest_rating">
         <h2>Top positive review</h2>
-        <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div>
-        <p><%= @product.highest_rating_comment.body %></p>
+        <% if @product.highest_rating_comment %>
+            <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div>
+            <p><%= @product.highest_rating_comment.body %></p>
+        <% else %>
+            <p>No ratings yet. Be the first one to write a review!</p>
+        <% end %>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="lowest_rating">
         <h2>Top critical review</h2>
-        <div class="rated" data-score="<%= @product.lowest_rating_comment.rating %>"></div>
-        <p><%= @product.lowest_rating_comment.body %></p>
+        <% if @product.lowest_rating_comment %>
+            <div class="rated" data-score="<%= @product.lowest_rating_comment.rating %>"></div>
+            <p><%= @product.lowest_rating_comment.body %></p>
+        <% else %>
+            <p>No ratings yet. Be the first one to write a review!</p>
+        <% end %>
       </div>
     </div>
   </div> <!-- end row -->
