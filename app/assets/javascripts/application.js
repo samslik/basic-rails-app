@@ -37,9 +37,11 @@ $(document).on('turbolinks:load', function(){
             return $(this).attr('data-score');
         }
     });
-    function hideComments() {
-        if (comments.lenght < 3) {
-            $(".highest-rating").css("display", "none");
-        }
-    }
+
+    // $(".highest-rating") (function() {
+    //     var comments = Comment.lenght
+    //     if (comments < 3) {
+    //         $(".highest-rating").css("display", "none");
+    //     }
+    //     });
 });
