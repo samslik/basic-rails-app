@@ -271,3 +271,20 @@ label {
 .pagination a:hover {
   color: #dc2c2c;
 }
+
+.comment-body {
+  margin: auto;
+  width: 80%;
+  border-radius: 5px;
+  background-color: rgb(243, 243, 243);
+  padding-bottom: 10px;
+}
+
+.comment-body hr {
+  margin-top: 0;
+}
+
+.cross {
+  float: right;
+  padding: 10px 12px 0 0;
+}

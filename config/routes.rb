@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "user_registrations" }
   resources :users
   resources :products do
     resources :comments
@@ -16,9 +16,6 @@ Rails.application.routes.draw do
 
   root 'static_pages#landing_page'
   # root 'products#index'
-
-
-
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

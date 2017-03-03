@@ -38,10 +38,23 @@ $(document).on('turbolinks:load', function(){
         }
     });
 
-    // $(".highest-rating") (function() {
-    //     var comments = Comment.lenght
-    //     if (comments < 3) {
-    //         $(".highest-rating").css("display", "none");
+    var comments = $('.comment-body');
+    if (comments.length < 3) {
+        $(".highest_rating, .lowest_rating").css("display", "none");
+    }
+
+    // for (var i = 0; i < comments.length; ++i) {
+    //     if (i % 2 === 0) {
+    //         comments[i].css('border', '2px solid DodgerBlue');
+    //     } else {
+    //         comments[i].css('border', '2px solid salmon');
     //     }
-    //     });
+    // }
+    comments.each(function(i, elem){
+        if (i % 2 === 0) {
+                $(this).css('background-color', '#f3f3f3');
+            } else {
+            $(this).css('background-color', 'rgb(251, 251, 251)');
+            }
+    });
 });
