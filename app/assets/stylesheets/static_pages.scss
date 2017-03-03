@@ -55,6 +55,10 @@ a:hover {
   padding-bottom: 40px;
 }
 
+.wrapper .header {
+  padding-top: 0;
+}
+
 .container {
   width: 95%;
   padding: 0;
@@ -222,8 +226,12 @@ a:hover {
 //end navigation bar
 
 .main-photo {
+  width: 80%;
+  border-radius: 10px;
+  border: 2px solid #dc2c2c;
   max-width: 80%;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 footer {
@@ -648,6 +656,107 @@ input:-webkit-autofill {
   padding-top: 30px;
 }
 
+.hero-content {
+  background-color: #dc2c2c;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.hero-content p {
+  color: #dc2c2c;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  text-align: center;
+  color: #f8ecbd;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+.carousel {
+  margin-bottom: 40px;
+  height: 200px;
+}
+
+.glyphicon-euro,
+.glyphicon-shopping-cart {
+  font-size: 40px;
+  padding: 30px 0;
+}
+
+.info-box {
+  text-align: center;
+  background-color: #f8ecbd;
+  min-height: 300px;
+  margin: 30px;
+  border-radius: 10px;
+  color: #dc2c2c;
+}
+
+.info-box-header {
+  text-align: center;
+  color: #f8ecbd;
+}
+
+.info-box p {
+  text-align: center;
+  font-size: 30px;
+  font-family: Lobster, cursive;
+}
+
+.info-box p:last-child {
+  font-family: Sansita, arial, helvetica, sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.info-box .glyphicon-asterisk {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.info-box-more p {
+  color: #f8ecbd;
+  font-family: Lobster, cursive;
+  font-size: 22px;
+}
+
+.info-box-more {
+  width: 100%;
+}
+
+#learn-more-button a{
+  font-family: Lobster, cursive;
+  font-size: 24px;
+  background-color: #f8ecbd;
+  color: #dc2c2c;
+  padding: 10px 20px;
+  margin: 0 auto;
+  display: inline-block;
+  border: 2px solid #f8ecbd;
+  border-radius: 5px;
+}
+
+#learn-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border: 2px solid #dc2c2c;
+}
+
+#learn-more-button a:hover {
+  text-decoration: none;
+  color: #f8ecbd;
+  background-color: #dc2c2c;
+  border: 2px solid #f8ecbd;
+}
+
+.freepik {
+  display: none;
+}
 //Palette:
 //coral - #dc2c2c
 //font - f8ecbd

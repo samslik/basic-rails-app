@@ -29,6 +29,11 @@ pre {
   display: inline-block;
 }
 
+.button-new {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
 .button-new a,
 .button a,
 .button-back a{
@@ -282,6 +287,16 @@ label {
 
 .comment-body hr {
   margin-top: 0;
+}
+
+//.comment-body p:last-child {
+//  font-family: "Just Me Again Down Here", sans-serif;
+//  font-size: 20px;
+//}
+
+.product-reviews {
+  border-top: 1px dashed #bdbcbc;
+  margin-top:20px;
 }
 
 .cross {
