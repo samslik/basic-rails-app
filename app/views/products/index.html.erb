@@ -1,4 +1,12 @@
 <div class="button-new"><%= link_to 'Sell a bike', new_product_path %></div>
+<div class="mobile-search">
+  <%= form_tag("/products", method: "get") do %>
+      <%= text_field_tag(:q, nil, placeholder: 'Search', class: "search-field")%>
+      <%= button_tag(type: "submit", class: "search-button") do %>
+          <i class="glyphicon glyphicon-search"></i>
+      <% end %>
+  <% end %>
+</div>
 <div class="header"><h1>Choose the right one</h1></div>
 
 <div class="container-fluid">
