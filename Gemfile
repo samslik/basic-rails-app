@@ -35,6 +35,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
 end
 
 group :development do
@@ -58,3 +59,5 @@ gem 'devise'
 gem 'cancancan'
 
 gem 'will_paginate', '~> 3.1.1'
+
+gem 'stripe'

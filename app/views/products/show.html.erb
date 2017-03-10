@@ -26,6 +26,9 @@
           <strong>Price:</strong>
           <%= @product.price %> Euro
         </p>
+        <%= form_tag "/payments/create" do %>
+            <%= render partial: "shared/stripe_checkout_button" %>
+        <% end %>
       </div>
     </div>
   </div> <!--end row -->
