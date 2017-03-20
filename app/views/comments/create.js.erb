@@ -1,0 +1,10 @@
+//if ($(".comment-just-written").html("Thank you for your review!")) {
+//  $(".product-reviews").css({
+//    "border-top": "none",
+//    "margin-top": "0"});
+//}
+
+$(".comment-just-written").html("Thank you for your review!")
+$(".comments").prepend("<%= j render @comment %>");
+$("#average-rating").attr("data-score", "<%= @product.average_rating %>");
+refreshRating();

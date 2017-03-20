@@ -5,7 +5,7 @@
   <div class="row">
     <div class="col-xs-12 col-sm-6">
       <div class="img">
-        <%= image_tag(@product.image_url, data_zoom_image: @product.image_url, class: "img-zoom show-product img-responsive") %>
+        <%= image_tag(@product.image_url, height: "300", data_zoom_image: @product.image_url, class: "img-zoom show-product img-responsive") %>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6">
@@ -40,9 +40,11 @@
 
   <div class="row division">
     <div class="col-xs-12 col-md-4">
+      <div class="comment-just-written">
 
-      <%= render 'new_comment' %>
+        <%= render 'new_comment' %>
 
+      </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="highest_rating">
