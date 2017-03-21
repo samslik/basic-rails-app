@@ -4,7 +4,7 @@
 //    "margin-top": "0"});
 //}
 
-$(".comment-just-written").html("Thank you for your review!")
+$(".comment-just-written").html('<div class="thank-you">Thank you for your review!</div>')
 $(".comments").prepend("<%= j render @comment %>");
 $("#average-rating").attr("data-score", "<%= @product.average_rating %>");
 refreshRating();
