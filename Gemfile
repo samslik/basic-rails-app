@@ -62,3 +62,5 @@ gem 'cancancan'
 gem 'will_paginate', '~> 3.1.1'
 
 gem 'stripe'
+
+gem 'dalli'
