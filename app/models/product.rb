@@ -24,4 +24,13 @@ class Product < ApplicationRecord
       Product.where("name LIKE ?", "%#{search_term}%")
     end
   end
+
+  def views
+    $redis.get("product:#{id}")
+  end
+
+  def viewed
+    $redis.inc("product:#{id}")
+  end
+
 end
