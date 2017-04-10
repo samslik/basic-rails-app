@@ -1,5 +1,5 @@
-<% cache product do %>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+<% cache product do %>
     <a class="product-container" href="<%= product_path(product)  %>">
       <div class="polaroid">
         <div class="bike-photo">
@@ -11,9 +11,11 @@
       <p class="description"><%= product.description %></p>
       <p class="price"> <%= product.price %> Euro </p>
     </a> <!-- end product-container -->
+<% end %>
     <div class="index-links">
-      <div class="button"><%= link_to 'Edit', edit_product_path(product) %></div>
-      <div class="button"><%= link_to 'Delete', product, method: :delete, data: {confirm: 'Are you sure?' } %></div>
+      <% if current_user && current_user.admin? %>
+        <div class="button"><%= link_to 'Edit', edit_product_path(product) %></div>
+        <div class="button"><%= link_to 'Delete', product, method: :delete, data: {confirm: 'Are you sure?' } %></div>
+      <% end %>
     </div>
   </div> <!-- end col -->
-<% end %>

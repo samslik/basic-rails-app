@@ -14,9 +14,7 @@
     <% if params[:q] %>
       <%= render @products %>
     <% else %>
-        <% cache(cache_key_for_products) do %>
-            <%= render @products %>
-        <% end %>
+        <%= render @products %>
     <% end %>
   </div>
 </div>
